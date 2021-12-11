@@ -1,0 +1,82 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Table & Form </title>
+	<link rel="icon" type="image/x-icon" href="https://andrewlock.net/content/images/2016/10/icon.png">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body style="background-image: url('https://media.istockphoto.com/photos/abstract-yellow-and-black-are-light-pattern-with-the-gradient-is-the-picture-id1293610121?b=1&k=20&m=1293610121&s=170667a&w=0&h=6oqb7hqacjiku7uFnIot0Ub8jXcVSW4mexL9UzQ9K_I=');">
+	
+	<h1>HTML Form</h1>
+	<h2>Text Input Fields</h2>
+	<form>
+		<label for="fname">First Name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last Name:</label><br>
+		<input type="text' id="lname" name="lname" value="Doe"><br>
+		<p>Choose your Favourite Web Language:</p>
+		<form>
+			<input type="radio" id="html" name="fav_language" value="HTML">
+			<label for="html">HTML</label><br>
+			<input type="radio" id="css" name="fav_language" value="CSS">
+			<label for="css">CSS</label><br>
+			<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+			<label for="javascript">JavaScript</label>
+		</form>
+		<h2>Choose what you have:</h2>
+		<form action="#">
+			<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+			<label for="vehicle1">I have a Bike</label><br>
+			<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+			<label for="vehicle2">I have a Car</label><br>
+			<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+			<label for="vehicle3">I have boat</label>
+		<br>
+		</form>
+		<br>
+		<form action="#">
+		<label for="Cars">Choose a Car:</label>
+		<select id="cars" name="cars" size="2" multiple>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+		<br><br>
+		<h2>Write your message here.</h2>
+		<textarea name="message" rows="5" cols="30">The cat was playing in the garden.</textarea>
+		<br><br>
+		<p>Write you message here. We will contact you immediately.</p>
+		<textarea name="message" style="width:100px; height:100px;">This is the area for typing your message</textarea>
+		<br><br>
+		
+		<h3>Alert Button</h3>
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+		<h2>Grouping Form Data with Fieldset</h2>
+		<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+		<fieldset>
+			<legend>Personalia:</legend>
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last Name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		</fieldset>
+		<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+		<input list="browsers" name="brower">
+		<datalist id="browsers">
+			<option value="internet Explorer">
+			<option value="Firefox">
+			<option value="Chrome">
+			<option value="Opera">
+			<option value="Safari">
+		</datalist>
+		
+		<input type="submit" value="submit" style="width:100px; height:50px;">
+	</form>
+		
+</body>
+</html>
+
